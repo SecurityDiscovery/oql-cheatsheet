@@ -18,19 +18,19 @@ select {name: property.name.string.toString(), value: property.value.toString()}
 
 # General
 
-#### all strings
+# Strings (java.lang.String)
+
+*Return all strings*:
 ```sql
 select s from java.lang.String s
 ```
 
-#### all strings as strings
+*Return strings as strings*
 ```sql
 select s.toString() from java.lang.String s
 ```
 
-
-#### strings containing a keyword
-
+*Search for the keyword `sentinel` in all strings*
 ```sql
 select s from java.lang.String s where s.toString().contains("sentinel")
 ```
