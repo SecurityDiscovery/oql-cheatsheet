@@ -18,7 +18,7 @@ select {name: property.name.string.toString(), value: property.value.toString()}
 
 # General
 
-# Strings (java.lang.String)
+## Strings (java.lang.String)
 
 *Return all strings*:
 ```sql
