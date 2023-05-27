@@ -35,4 +35,16 @@ select s.toString() from java.lang.String s
 select s from java.lang.String s where s.toString().contains("sentinel")
 ```
 
+*List registered path patterns*
+```sql
+select pathPattern.patternString.toString() from org.springframework.web.util.pattern.PathPattern pathPattern
+```
 
+Example output:
+```
+/notify/async-session
+/notify/all
+/webjars/**
+/actuator/heapdump
+...
+```
