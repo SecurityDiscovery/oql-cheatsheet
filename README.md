@@ -49,3 +49,7 @@ select s.toString() from java.lang.String s
 ```sql
 select s from java.lang.String s where s.toString().contains("sentinel")
 ```
+*Search for PRIVATE KEYs**
+```
+select s from java.lang.String s where s.toString().contains("PRIVATE KEY")
+```
