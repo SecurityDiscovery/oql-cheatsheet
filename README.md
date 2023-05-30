@@ -26,15 +26,6 @@ select property.name.string.toString() + "=" + property.value.toString() from or
 select pathPattern.patternString.toString() from org.springframework.web.util.pattern.PathPattern pathPattern
 ```
 
-Example output:
-```
-/notify/async-session
-/notify/all
-/webjars/**
-/actuator/heapdump
-...
-```
-
 # General
 
 ## Strings (java.lang.String)
@@ -53,7 +44,8 @@ select s.toString() from java.lang.String s
 ```sql
 select s from java.lang.String s where s.toString().contains("sentinel")
 ```
-*Search for PRIVATE KEYs**
-```
+
+**Search for PRIVATE KEYs**
+```sql
 select s from java.lang.String s where s.toString().contains("PRIVATE KEY")
 ```
