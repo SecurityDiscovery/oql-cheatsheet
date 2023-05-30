@@ -13,10 +13,6 @@ select property from org.springframework.boot.context.properties.source.Configur
 
 **This command below is helpful to discover secrets!**
 ```sql
-select {name: property.name.string.toString(), value: property.value.toString()} from org.springframework.boot.context.properties.source.ConfigurationProperty property
-```
-more readable:
-```sql
 select property.name.string.toString() + "=" + property.value.toString() from org.springframework.boot.context.properties.source.ConfigurationProperty property
 ```
 
