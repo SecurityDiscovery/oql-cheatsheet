@@ -10,8 +10,6 @@ OQL pentesting cheatsheet
 ```sql
 select property from org.springframework.boot.context.properties.source.ConfigurationProperty property
 ```
-
-**This command below is helpful to discover secrets!**
 ```sql
 select property.name.string.toString() + "=" + property.value.toString() from org.springframework.boot.context.properties.source.ConfigurationProperty property
 ```
