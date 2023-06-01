@@ -17,6 +17,9 @@ select property.name.string.toString() + "=" + property.value.toString() from or
 
 **List registered path patterns**
 ```sql
+select pathPattern from org.springframework.web.util.pattern.PathPattern pathPattern
+```
+```sql
 select pathPattern.patternString.toString() from org.springframework.web.util.pattern.PathPattern pathPattern
 ```
 
