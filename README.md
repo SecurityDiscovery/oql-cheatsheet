@@ -4,9 +4,10 @@ OQL pentesting cheatsheet
 ## Framework specific
 
 ### Spring
+---
 
 #### Configuration Properties
----
+
 ```sql
 select property from org.springframework.boot.context.properties.source.ConfigurationProperty property
 ```
