@@ -6,7 +6,7 @@ OQL pentesting cheatsheet
 ### Spring
 
 #### Configuration Properties
-
+---
 ```sql
 select property from org.springframework.boot.context.properties.source.ConfigurationProperty property
 ```
@@ -26,7 +26,7 @@ select pathPattern.patternString.toString() from org.springframework.web.util.pa
 ## General
 
 ### Strings (`java.lang.String`)
-
+---
 **Return all strings**
 ```sql
 select s from java.lang.String s
