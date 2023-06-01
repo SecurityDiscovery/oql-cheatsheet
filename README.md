@@ -23,9 +23,9 @@ select pathPattern from org.springframework.web.util.pattern.PathPattern pathPat
 select pathPattern.patternString.toString() from org.springframework.web.util.pattern.PathPattern pathPattern
 ```
 
-# General
+## General
 
-## Strings (java.lang.String)
+### Strings (`java.lang.String`)
 
 **Return all strings**
 ```sql
